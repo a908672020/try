@@ -1,0 +1,302 @@
+.pad20{
+	padding: 0px 10% 0px 10%;
+}
+ .clear {
+ 	clear: both
+ }
+
+.active{
+	color:#347352;
+}
+.navbar{
+	padding-top: 10px;
+}
+#navbar{
+	height: auto;
+	border-color: #e7e7e7;
+	background-color: #fff;
+	float: right;
+	
+}
+ #navbar ul{
+	 line-height: 50px;
+ }
+#navbar ul li {
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	
+}
+#navbar ul li:before{
+			content: '';
+			position: absolute;
+			width: 0;
+			left: 100%;
+			bottom: 0;
+			height: 3px;
+			background-color: #364156;
+		}
+		#navbar ul li:hover:before{
+					width: 100%;
+					left: 0;
+					transition: all 0.3s;
+				}
+		#navbar ul li:hover ~ li:before{
+					right: 0;
+				}
+		
+
+#navbar li a{
+	font-family: candara;
+	padding-bottom: 2px;
+	color: #364156;
+	
+
+}
+#navbar li a:hover {
+	text-decoration: none;	
+	/* border-bottom: #364156 solid 3px; */
+}
+#navbar li a:active{
+	text-decoration: none;
+	/* border-bottom: #364156 solid 3px; */
+}
+
+.navbar-brand img{
+	height: 100%;
+}
+
+/* banner */
+.Banner{
+	background-color: #e3ebfb;
+	position: absolute;
+	margin-bottom: 100px;
+	padding-top: 50px;
+	/* display: flex;
+	align-items: center; */
+}
+.Banner img{
+	margin-top: 100px;
+}
+
+.Banner ul{
+	margin:20% 0 20% 0;
+	text-align: center;
+}
+.Banner ul li{
+	display: block;	
+	font-size: 24px;
+	text-align: left;
+	margin-top: 20px;
+	
+}
+.Banner ul li > strong{
+	font-size: 50px;
+	line-height: 80px;
+}
+
+/* about */
+.About{
+	position: relative;
+	padding-left: 8%;
+	height: auto;
+	margin-bottom: 100px;
+}
+.About ul{	
+	margin: auto;
+	text-align: center;
+	padding-right: 10%;
+}
+.About ul li{
+	display: block;	
+	font-size: 24px;
+	text-align: left;
+	margin-top: 20px;
+	
+}
+
+.About ul li strong{
+	font-size: 36px;
+	line-height: 48px;
+}
+.About ul li em{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+@media (max-width:768px) {
+	.About{
+		height: auto;
+		padding: 0 ;
+	}
+	.About ul li{
+		text-align: center;
+		margin: 0 auto;
+	}
+	.About img{
+		display: none;
+	}
+}
+
+
+/* works */
+
+.carousel-control img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+}
+#slider-btn{
+	width: 200px;
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: 50px;
+}
+
+/* contact */
+input{
+	background: none;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #A49EF0;
+	outline: none;
+	height: 50px;
+	width: 50%;
+}
+textarea{
+	padding-top: 10px;
+	scrollbar-3dlight-color: #364156;
+	background: none;
+	
+}
+.Contact{
+	height: 800px;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f4f5f5;
+}
+.content{
+	float: left;
+	height: auto;
+}
+#message{
+	height: 300px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #A49EF0;
+	outline: none;
+	min-width: 400px;
+	max-width: 600px;
+	min-height: 300px;
+	max-height: 350px;
+}
+
+.Contact  p{
+	font-weight: bold;
+	font-size: 100px;
+	color: ##364156;
+}
+.catchlink{
+	float: right;
+	height: auto;
+}
+.catchlink ul{
+	
+	margin-right: 50px;
+}
+.catchlink ul li{
+	height: 36px;
+	width: 36px;
+	float: right;
+	/* line-height: 250px; */
+	margin-left: 30px;
+	margin-top: 100px;
+}
+.catchlink ul li img{
+	height: 100%;
+	width: auto;
+}
+.emailpic{
+	float: right;
+	margin-right: 50px;
+	margin-top: 100px;
+}
+@media (max-width:768px) {
+	.emailpic{
+		display: none;
+	}
+}
+
+/* footer */
+.footer{
+	height: 400px;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+/* .footer ul li{
+	width: auto;
+	margin-left: 5%;
+	margin-right: 3%;
+	float: left;
+} */
+.footer p{
+	font-size:24px;
+	border-bottom: rgba(0,0,0,0.1);
+}
+.float-text-menu li{
+	float: left;
+	margin-left: 50px;
+}
+@media (max-width:768px) {
+	.float-text-menu{
+		margin-left: 100px;
+	}
+	
+}
+.float-text-menu li a {
+  display: flex;
+  padding: 6px;
+  color: #364156;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.float-text-menu li a span {
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition:0.5s;
+}
+.float-text-menu li a span::before {
+  position: absolute;
+  content: attr(data-text);
+  transform: translateY(100%);
+}
+
+.float-text-menu li a:hover span {
+  transform: translateY(-100%);
+}
+.Separator{
+	height: 100%;
+	width: 1px;
+	background-color: #C0C0C0;
+	float: left;
+}
+@media (max-width:768px) {
+	.Separator{
+		display: none;
+	}
+	
+}
+
+.foolterr ul li{
+	margin-bottom: 30px;
+}
